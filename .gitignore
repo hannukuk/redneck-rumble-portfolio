@@ -1,0 +1,4 @@
+.vscode/
+*.blend1
+Thumbs.db
+.DS_Store
