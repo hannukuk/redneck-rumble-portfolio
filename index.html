@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Redneck Rumble: an independent Unreal Engine 5 game development portfolio by Hannu Kukka, showcasing gameplay, animation, AI and 3D production.">
+    <title>Redneck Rumble | Hannu Kukka</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+    </script>
+</head>
+
+<body>
+    <header class="nav"><a class="brand" href="#top">HK<span> / GAME DEV</span></a>
+        <nav><a href="#gameplay">Gameplay</a><a href="#pipeline">Pipeline</a><a href="#technical">Tech</a><a
+                href="#assets">Assets</a><a href="#virtualoulu">VirtualOulu</a></nav><a class="navcta"
+            href="https://youtu.be/jsqjkoZm33Y" target="_blank" rel="noopener">Watch demo ↗</a>
+    </header>
+    <main id="top">
+        <section class="hero">
+            <div class="hero-image"
+                style="background-image:linear-gradient(90deg,rgba(12,19,19,.96),rgba(12,19,19,.20)),url('assets/p1-1.jpg')">
+            </div>
+            <div class="hero-content">
+                <div class="eyebrow">INDEPENDENT GAME DEVELOPMENT · WORK IN PROGRESS</div>
+                <h1>REDNECK<br><em>RUMBLE.</em></h1>
+                <p>A stylized third-person action game on a fictional Southern farm. Built independently with Unreal
+                    Engine 5 and Blender.</p>
+                <div class="actions"><a class="btn primary" href="#demo">▶ Watch gameplay</a><a class="btn secondary"
+                        href="#gameplay">Explore the project ↓</a></div>
+                <div class="tags"><span>Unreal Engine 5</span><span>Blender</span><span>Blueprints</span><span>Character
+                        animation</span></div>
+            </div>
+        </section>
+        <section class="intro wrap">
+            <div class="eyebrow">THE PROJECT</div>
+            <div class="split">
+                <h2>From leading software development to <i>building a game myself.</i></h2>
+                <div>
+                    <p>After years working in software product ownership, technical project management and cross-team
+                        coordination, I wanted to experience game development from the developer's perspective.</p>
+                    <p>Redneck Rumble is my independent learning project, connecting asset production, character
+                        animation, combat systems and iteration into a playable prototype. This portfolio documents both
+                        the work and the production lessons behind it.</p>
+                    <p class="byline">Hannu Kukka · Technical product leadership & hands-on game development</p>
+                    <div class="ai-disclaimer">
+                        <strong>AI tools & asset attribution</strong>
+                        <p>
+                            All 3D assets presented as my own work were created by me.
+                            AI tools have supported concept exploration, texturing,
+                            debugging and learning.
+                        </p>
+                        <p>
+                            Some environment assets are
+                            third-party resources (CC0 or FAB marketplace), and certain temporary 2D UI assets
+                            are AI-generated.
+                        </p>
+                        <p>
+                            Character animations include assets sourced from Mixamo and Epic Games' Lyra Starter Game
+                            and Game Animation Sample projects. I have handled character rigging, animation retargeting,
+                            blending, locomotion systems and gameplay integration myself.
+                        </p>
+                        <p>
+                            All showcased Blueprint gameplay systems
+                            have been implemented and integrated by me, with help from AI tools in debugging and optimization.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="demo" class="wrap section">
+            <div class="section-heading"><span class="eyebrow">00 / GAMEPLAY DEMO</span>
+                <h2>See it <i>in motion.</i></h2>
+            </div>
+            <div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/jsqjkoZm33Y"
+                    title="Redneck Rumble gameplay demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p class="note">Gameplay footage from an in-development prototype. Enemies and some environments use
+                placeholder assets.</p>
+        </section>
+        <section id="gameplay" class="wrap section">
+            <div class="section-heading"><span class="eyebrow">01 / GAMEPLAY & SYSTEMS</span>
+                <h2>From input to <i>impact.</i></h2>
+                <p>Developing a third-person combat loop that connects weapon handling, animation, hit detection, visual
+                    feedback and enemy interactions.</p>
+            </div>
+            <div class="feature"><img src="assets/p2-1.jpg" alt="Daisy aiming Danielle at training targets"
+                    loading="lazy">
+                <div class="feature-copy">
+                    <h3>Combat & weapons</h3>
+                    <ul>
+                        <li>Danielle rifle and Dixie pistol: equip, aim, fire and reload</li>
+                        <li>Line-trace shooting, headshots and bodyshots</li>
+                        <li>Stylized HUD and combat feedback</li>
+                        <li>Training targets and evolving enemy AI</li>
+                    </ul>
+                    <p class="insight">PRODUCTION INSIGHT · Even a small gameplay feature spans animation, weapons, UI,
+                        effects and game logic. Clear interfaces matter.</p>
+                </div>
+            </div>
+            <details class="deep">
+                <summary>Explore weapon-swapping Blueprint <span>+</span></summary><img src="assets/p2-2.jpg"
+                    alt="Blueprint implementation of weapon swapping" class="zoomable-image" loading="lazy">
+                <p>Blueprint implementation of weapon swapping and related gameplay states.</p>
+            </details>
+        </section>
+        <section id="pipeline" class="section alt">
+            <div class="wrap">
+                <div class="section-heading"><span class="eyebrow">02 / CHARACTER & ASSET PIPELINE</span>
+                    <h2>Meet <i>Daisy.</i></h2>
+                    <p>From hand-drawn concept to rigged, textured and animated in-engine protagonist. Poly-modeled in
+                        Blender by hand.</p>
+                </div>
+                <div class="gallery three">
+                    <figure><img src="assets/p3-1.jpg" alt="Daisy early concept sketch" class="zoomable-image"
+                            loading="lazy">
+                        <figcaption>Early concept sketches</figcaption>
+                    </figure>
+                    <figure><img src="assets/p3-4.jpg" alt="Daisy sculpt in Blender" class="zoomable-image"
+                            loading="lazy">
+                        <figcaption>Character modelling</figcaption>
+                    </figure>
+                    <figure><img src="assets/p3-6.jpg" alt="Daisy textured model" class="zoomable-image" loading="lazy">
+                        <figcaption>Textured character</figcaption>
+                    </figure>
+                </div>
+                <div class="pill-grid"><span>Stylized modelling & cel shading</span><span>Rigging & skin
+                        weights</span><span>Animation retargeting</span><span>Blender → Unreal
+                        pipeline</span><span>Weapon attachments</span><span>Locomotion & foot IK</span></div>
+                <p class="insight">PRODUCTION INSIGHT · An asset is only production-ready when its skeleton, naming,
+                    export settings and animation integration all work together.</p>
+                <div>
+                    <model-viewer src="assets/SKM_Daisy.glb" alt="Daisy, Redneck Rumble protagonist" camera-controls
+                        auto-rotate rotation-per-second="15deg" shadow-intensity="1" exposure="1"
+                        style="width: 100%; height: 550px; background: #202622; border-radius: 16px;">
+                    </model-viewer>
+                </div>
+                <div class="viewer-hint">
+                    <span>↻ Drag to rotate</span>
+                    <span>⊕ Scroll to zoom</span>
+                    <span>Double-click to reset view</span>
+                </div>
+            </div>
+        </section>
+        <section id="technical" class="wrap section">
+            <div class="section-heading"><span class="eyebrow">03 / TECHNICAL CHALLENGES</span>
+                <h2>Debug. Iterate. <i>Integrate.</i></h2>
+                <p>Getting character systems to cooperate across unarmed, pistol and rifle states while preserving
+                    aiming, reloading, hit reactions and foot placement.</p>
+            </div>
+            <div class="feature reverse"><img src="assets/p4-1.jpg" alt="Daisy animation Blueprint"
+                    class="zoomable-image" loading="lazy">
+                <div class="feature-copy">
+                    <h3>Animation system integration</h3>
+                    <p>My approach is iterative: isolate a problem, inspect the relevant skeleton or Blueprint state,
+                        test one change and validate in gameplay.</p>
+                    <p>For example, one character-positioning bug came from an unexpected transform override in the character
+                        Blueprint, not from the mesh itself. Tracing the dependency prevented an unnecessary asset
+                        rework.</p>
+                </div>
+            </div>
+            <div class="gallery two">
+                <figure><img src="assets/p4-2.jpg" alt="Character rig in Blender" class="zoomable-image" loading="lazy">
+                    <figcaption>Character rigging</figcaption>
+                </figure>
+                <figure><img src="assets/p4-3.jpg" alt="Weight painting in Blender" class="zoomable-image"
+                        loading="lazy">
+                    <figcaption>Skin weights and deformation</figcaption>
+                </figure>
+            </div>
+            <details class="deep">
+                <summary>Enemy AI: detection and attack behaviour <span>+</span></summary>
+                <div class="gallery two">
+                    <figure><img src="assets/p5-1.jpg" alt="Enemy detection and engagement Blueprint"
+                            class="zoomable-image" loading="lazy">
+                        <figcaption>Player detection & engagement</figcaption>
+                    </figure>
+                    <figure><img src="assets/p5-2.jpg" alt="Enemy attack Blueprint" class="zoomable-image"
+                            loading="lazy">
+                        <figcaption>Attack behaviour</figcaption>
+                    </figure>
+                </div>
+            </details>
+        </section>
+        <section id="assets" class="section alt">
+            <div class="wrap">
+                <div class="section-heading"><span class="eyebrow">04 / ASSET SHOWCASE</span>
+                    <h2>Built by <i>hand.</i></h2>
+                    <p>Custom weapons, environment pieces and interactive training targets, modelled and integrated into
+                        the game.</p>
+                </div>
+                <div class="gallery two">
+                    <figure><img src="assets/p6-1.jpg" alt="Danielle and Dixie textured weapons" class="zoomable-image"
+                            loading="lazy">
+                        <figcaption>Danielle & Dixie · Blender models</figcaption>
+                    </figure>
+                    <figure><img src="assets/p6-4.jpg" alt="Daisy fighting placeholder enemies" class="zoomable-image"
+                            loading="lazy">
+                        <figcaption>Combat prototype in Unreal Engine</figcaption>
+                    </figure>
+                    <figure><img src="assets/p7-1.jpg" alt="Farm house in game" class="zoomable-image" loading="lazy">
+                        <figcaption>Farm house · Modelled & textured in Blender</figcaption>
+                    </figure>
+                    <figure><img src="assets/p7-4.jpg" alt="Daisy aiming at training dummy" class="zoomable-image"
+                            loading="lazy">
+                        <figcaption>Bucket Head training target in gameplay</figcaption>
+                    </figure>
+                    <figure><img src="assets/p7-2.jpg" alt="Bucket Head training target" class="zoomable-image"
+                            loading="lazy">
+                        <figcaption>Bucket Head training target · Blender model</figcaption>
+                    </figure>
+                    <figure><img src="assets/p1-2.jpg" alt="Daisy on the porch" class="zoomable-image" loading="lazy">
+                        <figcaption>Daisy standing on the porch in Unreal Engine</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="wrap section">
+            <div class="section-heading"><span class="eyebrow">05 / PRODUCTION PERSPECTIVE</span>
+                <h2>What building it <i>taught me.</i></h2>
+            </div>
+            <div class="lessons">
+                <article><b>01</b>
+                    <h3>Technical dependencies</h3>
+                    <p>Changes to rigs, animations and weapon systems ripple across the gameplay stack. Early
+                        integration and clear interfaces reduce surprises.</p>
+                </article>
+                <article><b>02</b>
+                    <h3>Iterative delivery</h3>
+                    <p>A small playable feature delivers more useful feedback than a collection of disconnected,
+                        unfinished assets.</p>
+                </article>
+                <article><b>03</b>
+                    <h3>Creative trade-offs</h3>
+                    <p>Visual ambition must be balanced against maintainability, performance and implementation effort.
+                    </p>
+                </article>
+                <article><b>04</b>
+                    <h3>Developer empathy</h3>
+                    <p>Removing friction, documenting decisions and protecting focus time matter to the people building
+                        the product.</p>
+                </article>
+            </div>
+            <p class="note">Next: refine enemy behaviour, expand the playable farm and develop a cohesive gameplay
+                slice. Redneck Rumble is not a shipped commercial game.</p>
+        </section>
+        <section id="virtualoulu" class="section alt">
+            <div class="wrap">
+                <div class="section-heading"><span class="eyebrow">06 / PREVIOUS PROFESSIONAL 3D WORK</span>
+                    <h2>Before the farm: <i>VirtualOulu.</i></h2>
+                    <p>University of Oulu · 3D City Modelling & Research</p>
+                </div>
+                <div class="split">
+                    <div>
+                        <p>VirtualOulu was a collaborative research initiative creating a detailed interactive
+                            reconstruction of central Oulu, spanning more than 30 city blocks.</p>
+                        <p>I worked with Autodesk Maya, Blender and Photoshop to model and texture recognizable
+                            landmarks, including Toripolliisi and Rotuaarin Pallo, and co-authored peer-reviewed
+                            scientific publications related to immersive city environments, interaction and user
+                            experience.</p>
+                        <div class="actions"><a class="btn secondary"
+                                href="https://ubicomp.oulu.fi/infrastructure-virtualoulu" target="_blank"
+                                rel="noopener">Project website ↗</a><a class="btn secondary"
+                                href="https://scholar.google.fi/citations?user=sxK1vQwAAAAJ" target="_blank"
+                                rel="noopener">Publications ↗</a></div>
+                    </div>
+                    <div class="gallery">
+                        <figure><img src="assets/p8-1.jpg" alt="Toripolliisi statue 3D model" loading="lazy">
+                            <figcaption>Toripolliisi · Modelled in Maya, textured in Photoshop</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="gallery two extra">
+                    <figure><img src="assets/p9-1.jpg" alt="Rotuaari Ball sculpture model" loading="lazy">
+                        <figcaption>Rotuaari Ball sculpture</figcaption>
+                    </figure>
+                    <figure><img src="assets/p9-2.jpg" alt="Rotuaari pedestrian street 3D model" loading="lazy">
+                        <figcaption>Rotuaari street environment & furniture</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="wrap foot">
+                <div><strong>HANNU KUKKA</strong>
+                    <p>Technical product leadership · Game development · HCI & UX</p>
+                </div><a href="https://youtu.be/jsqjkoZm33Y" target="_blank" rel="noopener">Watch Redneck Rumble
+                    gameplay ↗</a>
+            </div>
+        </footer>
+
+    </main>
+    <div id="image-lightbox" class="image-lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close image">×</button>
+        <img id="lightbox-image" alt="" />
+        <p class="lightbox-hint">Scroll to zoom · Drag to pan · Esc to close</p>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
